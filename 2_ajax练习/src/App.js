@@ -28,15 +28,5 @@ export default class app extends Component{
      else content=<h2>在GitHub上以{keyWord}开头，点赞量最多的是:<a href={repoUrl}>{repoName}</a></h2>
     
     return content
-
-    
-      // <div>
-      //   {isLoading==true?
-      //     <h2>Loading</h2>:
-      //     <h2>在GitHub上以{keyWord}开头，点赞量最多的是:<a href={repoUrl}>{repoName}</a></h2>
-      //   }
-      // </div>
-      
-    
   }
 }
