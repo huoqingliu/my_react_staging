@@ -9,9 +9,9 @@ export default class App extends Component{
     isLoading: false,//是否正在请求
     err: '',//错误信息
   }
-  upDateAppState = (stateObj) => {
-    this.setState(stateObj)
-  }
+  // upDateAppState = (stateObj) => {
+  //   this.setState(stateObj)
+  // }
   
   render() {
     return (

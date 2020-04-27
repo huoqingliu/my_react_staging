@@ -1,5 +1,6 @@
 import React,{Component} from "react";
 import axios from "axios";
+import Pubsub from "pubsub-js";
 
 export default class Search extends Component {
   inputNode = React.createRef()
@@ -23,9 +24,12 @@ export default class Search extends Component {
       console.log(items);
 
       // 4、保存数据到state
-      upDateAppState({userList:items,isLoading:false})
+      // upDateAppState({userList:items,isLoading:false})
+      PubSub.publish('upDateLIstData',{userList:items,isLoading:false})
     } catch (error) {
-      upDateAppState({error:error.message,isLoading:false})
+      // upDateAppState({error:error.message,isLoading:false})
+      PubSub.publish('upDateLIstData',{error:error.message,isLoading:false})
+
     }
 
     

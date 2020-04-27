@@ -5,7 +5,6 @@ import Head from "./components/head";
 
 import About from "./props/about";
 import Home from "./props/home";
-import MyNavLink from "./components/MyNavLink";
 
 export default class App extends Component{
 
@@ -22,14 +21,12 @@ export default class App extends Component{
         <div className="row">
           <div className="col-xs-2 col-xs-offset-2">
             <div className="list-group">
-              {/* <a className="list-group-item" href="./about.html">About</a>
-              <a className="list-group-item active" href="./home.html">Home</a> */}
+                  {/* <a className="list-group-item" href="./about.html">About</a>
+                  <a className="list-group-item active" href="./home.html">Home</a> */}
 
-              {/* <NavLink className="list-group-item" to='/about'>About</NavLink> */}
-              {/* <NavLink className="list-group-item" to='/about/123'>About</NavLink>
-              <NavLink className="list-group-item" to='/home'>Home</NavLink> */}
-              <MyNavLink to='/about/123'> About</MyNavLink>
-              <MyNavLink to='/home'> Home</MyNavLink>
+                  {/* <NavLink className="list-group-item" to='/about'>About</NavLink> */}
+                  <NavLink className="list-group-item" to='/about/123'>About</NavLink>
+                  <NavLink className="list-group-item" to='/home'>Home</NavLink>
             </div>
           </div>
           <div className="col-xs-6">
